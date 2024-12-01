@@ -28,7 +28,7 @@ const Navbar = ({userInfo, onSearchNote, handelClearSearch}) => {
       try {
         dispatch(signOutStart())
 
-        const res = await axios.get("http://localhost:3000/api/auth/signout", {
+        const res = await axios.get("https://mynotes-backend-u7y5.onrender.com/api/auth/signout", {
           withCredentials: true,
         })
 
